@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+.heroes {
+    width: 100%;
+    min-height: 40vw;
+    background-image: url('../../image/furniture-heroes.jpg');
+    background-position: 0, 0;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heroes .blur {
+    /* width: 50%; */
+    height: 0;
+    padding: 0 30px;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroes .blur > h1 {
+    font-size: var(--step-4);
+    color: white;
+    opacity: 0.9;
+}
+
+.heroes .blur > h1 > span {
+    color: #eebf1e ;
+}

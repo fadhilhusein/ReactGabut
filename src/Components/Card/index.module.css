@@ -1,0 +1,61 @@
+::root {
+    --size-circle: 50px;
+}
+
+.card {
+    width: min(400px, 80%);
+    height: 200px;
+    background-color: #f7f3ef;
+    border-radius: 14px;
+    padding: 10px;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 11px 11px 22px #d9d9d9,
+        -11px -11px 22px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card>h1 {
+    text-align: center;
+    z-index: 2;
+}
+
+.card__actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__actions>button {
+    border: none;
+    outline: none;
+    background-color: #a86ff1;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card__actions>button:nth-child(odd):hover {
+    box-shadow: 0 0 0 transparent, 0 0 0 400px rgb(106, 199, 236);
+    background-color: #fff;
+    transform: translateY(-15%);
+    filter: brightness(130%);
+}
+
+.card__actions>button:nth-child(even):hover {
+    box-shadow: 0 0 0 transparent, 0 0 0 400px violet;
+    background-color: #fff;
+
+    transform: translateY(15%);
+    filter: brightness(130%);
+}
